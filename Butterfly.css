@@ -1,0 +1,524 @@
+body {
+  margin: 0;
+}
+
+#scroll-text h1{
+  color: coral;
+}
+
+/* Top Nav Logo */
+
+#Logo {
+  display: inline-block;
+  height: 15vh;
+  width: 100%;
+  background-color: rgb(5, 5, 26);
+  padding: 10px 0;
+  position: relative;
+  display: inline-block;
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+.new {
+  height: auto;
+}
+
+.new img {
+  width: 81%;
+  height: 188%;
+  position: absolute;
+  left: 3%;
+}
+
+.logo-content img {
+  vertical-align: top;
+  height: 15vh;
+  width: 30%;
+  margin-left: 11%;
+}
+
+/* Container of nav bar */
+#container {
+  padding: 5px 0;
+  height: auto;
+  width: 100%;
+  background-color: #ecead8;
+  box-shadow: 0 0 20px #035c8c;
+
+  position: relative;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.li-style a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: rgb(12, 12, 23);
+}
+
+.li-style {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* Add a 10px gap between the <li> elements */
+}
+
+.li-styles1 {
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid rgb(32, 29, 13);
+}
+
+.li-styles:nth-child(3n) {
+  border-right: none; /* Remove right border for the third <li> in each row */
+}
+
+#alignment {
+  text-align: center;
+}
+
+.Main-img {
+  width: 100%;
+  padding-bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://butterflywebsite.com/images/back-butterfly-shop.jpg);
+}
+
+.Main-img-content {
+  padding: 150px 0;
+  text-align: center;
+  color: beige;
+}
+
+/* Main Content */
+
+#main-content {
+  background-color: #caedfe;
+  background-image: url(../images/bodyback2.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px #000;
+  position: relative;
+  z-index: 10;
+}
+
+#layout {
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.row-halves {
+  padding: 0;
+}
+
+.row-halves .column-1 {
+  width: 72%;
+  float: left;
+}
+
+.layout-body {
+  background-color: #fff;
+  box-shadow: 0 0 10px #316f93;
+  border-radius: 15px;
+  position: relative;
+  z-index: 500;
+}
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+.article-section {
+  flex-basis: 50%;
+}
+
+.articles div {
+  float: left;
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.article-img {
+  display: inline-block;
+}
+
+.article-img {
+  flex-basis: 30%;
+}
+
+.article-img img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.heading-feature {
+  color: black;
+}
+
+.article-heading {
+  float: left;
+}
+.feature-article {
+  height: auto;
+  width: 15vw;
+}
+
+.feature-article h2 {
+  margin-left: 5%;
+}
+
+/* Store Section */
+
+#store-section {
+  flex-flow: row wrap;
+  display: flex;
+}
+
+#store-section1 {
+  margin: 10px;
+  padding: 0px;
+  border: 1px solid #c74f13;
+  flex-basis: 30%;
+}
+
+.store-img {
+  padding: 5px;
+  text-align: center;
+}
+
+.store-img img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.content {
+  font-size: 100%;
+  padding: 10px 10px 20px 10px;
+}
+.column-content {
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-top: 10px;
+  font-size: 1.3em;
+  text-align: center;
+  color: #d63558;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.store ul {
+  margin-top: 20px;
+  padding-left: 2em;
+}
+
+.store ul li {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.store ul li a {
+  color: #5283f3;
+  text-decoration: none;
+}
+
+/* Aside Section */
+
+.aside-section {
+  height: 20rem;
+  width: auto;
+  background-image: url(https://butterflywebsite.com/images/affiliates/greenkidcrafts1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20%;
+  border: 1px solid black;
+  float: left;
+  margin-left: 2%;
+  box-shadow: 0 0 10px #000;
+}
+
+.aside2 {
+  margin-top: 2%;
+}
+
+/* Footer */
+
+footer {
+  background-color: #01283d;
+}
+
+.layout-footer {
+  color: #fff;
+  position: relative;
+  font-size: 0.8em;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 15px 24px;
+}
+
+.content-styling {
+  padding: 20px 0;
+}
+
+.footer-bottom {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #5dc3fc !important;
+  text-decoration: none;
+}
+
+.footer-new {
+  margin-top: 8%;
+  height: 20vh;
+  width: 100%;
+  background-color: #035c8c;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .logo-content img {
+    margin-top: 40px;
+    width: 50%;
+    height: auto;
+  }
+
+  #store-section1 {
+    flex-basis: 40%;
+  }
+
+  .content h2 {
+    font-size: 10px;
+  }
+  .content li a {
+    font-size: 10px;
+  }
+  .feature-article {
+    width: 100%;
+  }
+  .column-content {
+    font-size: 10px;
+    padding: 10px;
+    text-align: justify;
+    width: 95%;
+  }
+  .aside-section {
+    height: 82px;
+    background-size: contain;
+  }
+}
+
+.wrapper{
+  width: 25vw;
+  margin-right: 1.3%;
+  height: auto;
+  margin-top: 2%;
+  float: left;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(9, 9, 9, 0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 0px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+  margin-right: 10%;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left:8% ;
+}
+
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  margin-right: 11%;
+}
+.calendar .days{
+  margin-bottom: 20px;
+  margin-right: 11%;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 0.9rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+
+
+/* Collapse */
+
+div.hide{
+  display: none;
+}
+
+/* Background Video */
+.registration{
+  /* box-shadow: 10px 5px 5px rgb(50, 175, 112); */
+  float:left;
+  display: block;
+  /* width: 80%; */
+  margin-top: 2%;
+  margin-left: 6%;
+}
+
+#background-video{
+height: 60%;
+width: 84%;
+margin-left: 5%;
+border-radius: 10px;
+object-fit: cover;
+/* position: fixed; */
+left: 3%;
+top: 14%;
+z-index: -1;
+}
+
+.description1 {
+  color: rgb(253, 251, 251);
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: #000;
+}
+
+.Main-img-content h1{
+  color: #ffffff;
+  text-decoration: solid;
+  text-shadow: #000;
+}
+
+#scroll-container {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}

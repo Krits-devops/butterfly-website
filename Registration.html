@@ -1,0 +1,100 @@
+<!-- Made by Rachna Shukla/ 8922636 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Slot Booking Form</title>
+  <link rel="stylesheet" type="text/css" href="Registration.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Images/red_b.png" style="width:100%;height: 25vh ">
+      <div class="text">Butterflies Sun-red, Canada</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Images/blue_b.png" style="width:100%;height: 25vh">
+      <div class="text">Blue Pebbles Butterfly, Ontario</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Images/orange_b.png" style="width:100%;height: 25vh" >
+      <div class="text">Musky-Orange in Dew, Paris</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <div>
+    <h1>Book Your Visit now! Summer is Here & all our Butterflies!</h1>
+    <p>Welcome to our online Butterfly Conservatory slot booking system! Embrace the convenience of securing your visit to this mesmerizing sanctuary filled with fluttering wonders. With just a few clicks, you can reserve your preferred date and time, ensuring a seamless and delightful experience for you and your companions. Our user-friendly platform allows you to choose from available time slots, providing flexibility to plan your visit around your schedule. By pre-booking your slot, you'll have peace of mind knowing that you won't miss the opportunity to witness the enchanting dance of these delicate creatures up close. So, take the first step towards an unforgettable journey in nature's embrace and reserve your slot today!</p>
+  </div>
+
+  <div class="toggler">
+    <div id="effect" class="ui-widget-content ui-corner-all">
+      <h3 class="ui-widget-header ui-corner-all">A Guide to Booking Your Visit</h3>
+      <p>
+        Spring Splendor: The Peak Season for Butterfly Enthusiasts
+        Summer Serenity: Exploring the Conservatory's Lush Beauty
+      </p>
+    </div>
+  </div>
+   
+  <button id="button" class="ui-state-default ui-corner-all">Click Here</button>
+
+  <div class="container">
+    <div class="carousel">
+      <div class="slides">
+        <img src="Images/pipi.png" alt="Image 1">
+        <img src="Images/ChillyWinB.png" alt="Image 2">
+        <img src="Images/Heaven.png" alt="Image 3">
+        <img src="Images/WhitePas.png" alt="Image 4">
+        <img src="Images/Greeny Witch.png" alt="Image 5">
+      </div>
+    </div>
+
+    <form id="slotBookingForm" onsubmit="submitForm(event)">
+      <!-- Slot booking form fields here -->
+      <h2>Slot Booking Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Preferred Time Slot:</label>
+      <select id="time" name="time" required>
+        <option value="" disabled selected>Select a time slot</option>
+        <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+        <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+        <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
+      </select>
+      
+      <button type="submit" id="submitBtn">Book Slot</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="Registration.js"></script>
+</body>
+</html>
